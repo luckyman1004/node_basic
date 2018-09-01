@@ -4,13 +4,39 @@
 
 
 const http = require('http');
+const https = require('https');
 const url = require('url');
 const StringDecoder = require('string_decoder').StringDecoder;
 const config = require('./config');
-console.log(config);
+const fs = require('fs');
 
-// The server should respond to all request with a string
-const server = http.createServer(function(req, res){
+// Instantiating the http server
+const httpServer = http.createServer(function(req, res){
+  unifiedServer(req, res)
+})
+
+// Start the http server
+httpServer.listen(config.httpPort, function(){
+  console.log('The server listeneth on '+config.httpPort);
+})
+
+// Instantiate the https server
+const httpsServerOptions = {
+  key: fs.readFileSync('./https/key.pem'),
+  cert: fs.readFileSync('./https/cert.pem')
+};
+
+const httpsServer = https.createServer(httpsServerOptions,function(req, res){
+  unifiedServer(req, res)
+})
+
+// Start the https server
+httpsServer.listen(config.httpsPort, function(){
+  console.log('The server listeneth on '+config.httpsPort);
+})
+
+// All the logic for bot http and https server
+const unifiedServer = function(req, res) {
   // get url and parse it
   const parsedUrl = url.parse(req.url, true)
 
@@ -69,12 +95,8 @@ const server = http.createServer(function(req, res){
       console.log('Returun this response: ', statusCode, payloadString);
     })
   })
-})
+}
 
-// Start the server and have it listen on port 3000
-server.listen(config.port, function(){
-  console.log('The server listeneth on '+config.port+ '. Environment is '+config.name);
-})
 // Define handlers
 const handlers = {};
 
