@@ -95,7 +95,7 @@ const unifiedServer = function(req, res) {
       // send response
       res.end(payloadString);
       // log the path requested
-      console.log('Returun this response: ', statusCode, payloadString);
+      console.log('Return this response: ', statusCode, payloadString);
     })
   })
 }
@@ -104,4 +104,5 @@ const unifiedServer = function(req, res) {
 const router = {
   ping: handlers.ping,
   users: handlers.users,
+  tokens: handlers.tokens,
 }
