@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <meta charset="utf-8" />
+      <meta http-equiv="content-language" content="en-gb" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+      <base href={global.baseUrl} />
+
+      <title>{head.title} | {global.appName}</title>
+      <meta name="description" content="{global.description}"/>
+
+      <link type="image" rel="icon" href="favicon.ico"/>
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"/>
+      <link rel="stylesheet" type="text/css" href="public/style.css"/>
+
+    </head>
+
+    <body class="{body.class}">
+      <!-- Page Wrapper open -->
+      <header class="header">
+        <!-- Logo -->
+        <nav class="white" role="navigation">
+         <div class="nav-wrapper container">
+           <a id="logo-container" href="#" class="brand-logo">Logo</a>
+           <ul class="right hide-on-med-and-down">
+             <li><a class="loggedIn" href="#">Home</a></li>
+             <li><a class="loggedIn" href="#">Dashboard</a></li>
+             <li><a class="loggedIn" href="#">Account Setting</a></li>
+             <li><a class="loggedIn" href="#">Logout</a></li>
+             <li><a class="loggedOut" href="#">Login</a></li>
+             <li><a class="loggedOut" href="#">Signup</a></li>
+           </ul>
+
+           <ul id="nav-mobile" class="sidenav">
+             <li><a href="#">Navbar Link</a></li>
+           </ul>
+           <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+         </div>
+       </nav>
+      </header>
+      <div class="wrapper container">
+         <!-- page specific content open -->
+         <div class="content">
