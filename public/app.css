@@ -1,0 +1,59 @@
+/*
+ * CSS Styles for Application
+ *
+ */
+
+/* Resets */
+body,p,h1,h2,h3,h4,h5,h6,div,span,header,footer,img,a,a:hover,a:active,a:visited,table,tr,td,th,form,input,button,select,textarea{
+  font-family: 'Ubuntu', sans-serif;
+  text-decoration: none;
+  color: #0a0a0a;
+}
+
+body {
+  font-size: 12px;
+  font-weight: 300;
+}
+
+/* Main color palette */
+.header{
+  color: #000;
+}
+
+.header ul{
+
+}
+
+.header ul li{
+
+}
+
+.header ul li a{
+  color: #000;
+}
+
+.header .logo{
+  text-align: left;
+  padding: 0 0 0 90px;
+  float: left;
+}
+
+.header .logo img{
+  width: 50px;
+}
+
+.content {
+
+}
+
+.footer{
+  width: 100%;
+  background-color: #dddddd;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.footer .copyright{
+  color: #fff;
+  font-size: 10px;
+}

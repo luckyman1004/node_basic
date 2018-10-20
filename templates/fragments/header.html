@@ -12,8 +12,9 @@
 
       <link type="image" rel="icon" href="favicon.ico"/>
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+      <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400" rel="stylesheet">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"/>
-      <link rel="stylesheet" type="text/css" href="public/style.css"/>
+      <link rel="stylesheet" type="text/css" href="public/app.css"/>
 
     </head>
 
@@ -25,12 +26,12 @@
          <div class="nav-wrapper container">
            <a id="logo-container" href="#" class="brand-logo">Logo</a>
            <ul class="right hide-on-med-and-down">
-             <li><a class="loggedIn" href="#">Home</a></li>
-             <li><a class="loggedIn" href="#">Dashboard</a></li>
-             <li><a class="loggedIn" href="#">Account Setting</a></li>
+             <li><a class="loggedIn" href="/">Home</a></li>
+             <li><a class="loggedIn" href="/checks/all">Dashboard</a></li>
+             <li><a class="loggedIn" href="/account/edit">Account Setting</a></li>
              <li><a class="loggedIn" href="#">Logout</a></li>
-             <li><a class="loggedOut" href="#">Login</a></li>
-             <li><a class="loggedOut" href="#">Signup</a></li>
+             <li><a class="loggedOut" href="/session/create">Login</a></li>
+             <li><a class="loggedOut" href="/account/create">Signup</a></li>
            </ul>
 
            <ul id="nav-mobile" class="sidenav">
