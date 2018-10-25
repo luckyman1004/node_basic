@@ -15,6 +15,31 @@ body {
   font-weight: 300;
 }
 
+h1 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 15px;
+}
+
+h6 {
+  font-size: 12px;
+}
+
+nav ul li.loggedIn{
+  display: none;
+}
+
+body.loggedIn nav ul li.loggedIn{
+  display: inline-block;
+}
+
+body.loggedIn nav ul li.loggedOut{
+  display: none;
+}
+
+
 /* Main color palette */
 .header{
   color: #000;
@@ -46,6 +71,12 @@ body {
 
 }
 
+.info-box {
+  background-color: #f4f4f4;
+  padding:20px;
+  margin: 0 0 40px 0;
+}
+
 .footer{
   width: 100%;
   background-color: #dddddd;
@@ -56,4 +87,43 @@ body {
 .footer .copyright{
   color: #fff;
   font-size: 10px;
+}
+
+/*  */
+
+.btn-flat {
+  background-color: #26a69a;
+}
+
+/* Form Styling for Account Creation page and others */
+.formWrapper{
+  margin: 0 auto;
+  max-width: 500px;
+  padding: 15px;
+}
+
+.formError{
+  display: none;
+  font-style: italic;
+  color: #c83737;
+  padding: 10px 15px;
+  border-radius: 5px;
+  margin: 0 0 15px 0;
+  text-align: center;
+}
+
+input {
+  border-width: 1px;
+  border-radius: 2px;
+  padding: 7px 1%;
+  width: 100%;
+}
+
+.inputWrapper{
+  padding: 0 0 20px 0;
+}
+
+.inputLabel{
+  padding: 0 0 5px 0;
+  color: #808080;
 }
