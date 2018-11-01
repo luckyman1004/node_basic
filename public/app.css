@@ -13,7 +13,41 @@ body,p,h1,h2,h3,h4,h5,h6,div,span,header,footer,img,a,a:hover,a:active,a:visited
 body {
   font-size: 12px;
   font-weight: 300;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
 }
+
+
+.wrapper {
+  flex: 1 0 auto;
+}
+
+
+h1 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 15px;
+}
+
+h6 {
+  font-size: 12px;
+}
+
+nav ul li.loggedIn{
+  display: none;
+}
+
+body.loggedIn nav ul li.loggedIn{
+  display: inline-block;
+}
+
+body.loggedIn nav ul li.loggedOut{
+  display: none;
+}
+
 
 /* Main color palette */
 .header{
@@ -46,6 +80,12 @@ body {
 
 }
 
+.info-box {
+  background-color: #f4f4f4;
+  padding:20px;
+  margin: 0 0 40px 0;
+}
+
 .footer{
   width: 100%;
   background-color: #dddddd;
@@ -56,4 +96,93 @@ body {
 .footer .copyright{
   color: #fff;
   font-size: 10px;
+}
+
+/*  */
+
+.btn-flat {
+  background-color: #26a69a;
+}
+
+/* Form Styling for Account Creation page and others */
+.formWrapper{
+  margin: 0 auto;
+  padding: 15px;
+}
+
+.formError{
+  display: none;
+  font-style: italic;
+  color: #c83737;
+  padding: 10px 15px;
+  border-radius: 5px;
+  margin: 0 0 15px 0;
+  text-align: center;
+}
+
+input {
+  border-width: 1px;
+  border-radius: 2px;
+  padding: 7px 1%;
+  width: 100%;
+}
+
+select {
+  display: block;
+}
+
+.inputWrapper{
+  padding: 0 0 20px 0;
+}
+
+.inputLabel{
+  padding: 0 0 5px 0;
+  color: #808080;
+}
+
+.cta.blue{
+  background-color: #214478 !important;
+}
+
+.cta.green{
+  background-color: #217844 !important;
+}
+
+.cta.red{
+  background-color: #c83737 !important;
+}
+
+.warning{
+  font-style: italic;
+  color: #c83737;
+  font-size: 17px;
+  text-align: center;
+  line-height: 150%;
+  padding: 0 0 20px 0 ;
+}
+
+.backButton{
+  text-transform: uppercase;
+  font-weight: bold !important;
+  display: inline-block !important;
+  width: 100px;
+  padding: 7px !important;
+  color: #fff !important;
+  background-color: #1a1a1a;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.checkboxGroup label {
+  padding:0 10px 0 0;
+}
+
+.checkboxGroup label span {
+  padding-left: 21px !important;
+}
+
+.ctaWrapper {
+  padding-top: 10px;
+  margin-top: 10px;
 }

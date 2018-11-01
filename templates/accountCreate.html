@@ -1,0 +1,49 @@
+<div class="row">
+  <div class="col s12">
+    <h1 class="center-align">Create your account</h1>
+    <h4 class="center-align">Signup is easy and only takes a few seconds</h4>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col s12">
+    <div class="center-align">
+      <div class="col s6 offset-s3">
+        <div class="form wrapper">
+          <form id="accountCreate" action="/api/users" method="POST">
+            <div class="formError"></div>
+            <div class="inputWrapper">
+              <div class="inputLabel">First Name</div>
+              <input type="text" name="firstname" placeholder="John" />
+            </div>
+            <div class="inputWrapper">
+              <div class="inputLabel">Last Name</div>
+              <input type="text" name="lastname" placeholder="Smith" />
+            </div>
+            <div class="inputWrapper">
+              <div class="inputLabel">Phone Number</div>
+              <input type="text" name="phone" placeholder="(0803) 123-4567"/>
+            </div>
+            <div class="inputWrapper">
+              <div class="inputLabel">Choose a Password</div>
+              <input type="password" name="password" placeholder="Make it a good one!" />
+            </div>
+            <div class="inputWrapper">
+              <p>
+                <label>
+                  <input type="checkbox" name="tosAgreement" value="agree">
+                  <span class="inputLabel">Do you agree to the terms and conditions?</span>
+                </label>
+              </p>
+            </div>
+            <div class="inputWrapper ctaWrapper">
+              <button class="btn waves-effect waves-light btn-small btn-flat" type="submit">Get Started
+                <i class="material-icons right">send</i>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
