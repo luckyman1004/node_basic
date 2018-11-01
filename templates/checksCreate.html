@@ -1,0 +1,119 @@
+<div class="row">
+  <div class="col s12">
+    <h1 class="center-align">Create a check</h1>
+    <h4 class="center-align">Your check will run once per minute</h4>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col s12">
+    <div class="center-align">
+      <div class="col s12">
+        <div class="formWrapper">
+          <form id="checksCreate" action="/api/checks" method="POST">
+            <div class="formError"></div>
+            <div class="row">
+                <div class="col s3">
+                  <div class="inputWrapper">
+                      <div class="inputLabel">Protocol</div>
+                      <select name="protocol">
+                        <option value="http"selected>http://</option>
+                        <option value="https">https://</option>
+                      </select>
+                  </div>
+                </div>
+
+                <div class="col s6">
+                  <div class="inputWrapper">
+                    <div class="inputLabel">URL (not including protocol)</div>
+                    <input type="text" name="url" placeholder="mywebsite.com/my/path" />
+                  </div>
+                </div>
+
+                <div class="col s3">
+                  <div class="inputWrapper">
+                    <div class="inputLabel">HTTP Method</div>
+                    <select name="httpmethod">
+                      <option value="post">POST</option>
+                      <option value="get" selected>GET</option>
+                      <option value="put">PUT</option>
+                      <option value="delete">DELETE</option>
+                    </select>
+                  </div>
+                </div>
+            </div>
+
+            <div class="row">
+              <div class="col s9">
+                <div class="inputWrapper">
+                  <div class="inputLabel">Success Codes (HTTP codes that should represent "up")</div>
+                  <div class="checkboxGroup">
+                    <label>
+                      <input class="multiselect intval" type="checkbox" name="successCodes" value="200" checked/>
+                      <span>200</span>
+                    </label>
+                    <label>
+                      <input class="multiselect intval" type="checkbox" name="successCodes" value="201" checked/>
+                      <span>201</span>
+                    </label>
+                    <label>
+                      <input class="multiselect intval" type="checkbox" name="successCodes" value="301" />
+                      <span>301</span>
+                    </label>
+                    <label>
+                      <input class="multiselect intval" type="checkbox" name="successCodes" value="302" />
+                      <span>302</span>
+                    </label>
+                    <label>
+                      <input class="multiselect intval" type="checkbox" name="successCodes" value="400" />
+                      <span>400</span>
+                    </label>
+                    <label>
+                      <input class="multiselect intval" type="checkbox" name="successCodes" value="403" />
+                      <span>403</span>
+                    </label>
+                    <label>
+                      <input class="multiselect intval" type="checkbox" name="successCodes" value="404" />
+                      <span>404</span>
+                    </label>
+                    <label>
+                      <input class="multiselect intval" type="checkbox" name="successCodes" value="406" />
+                      <span>406</span>
+                    </label>
+                    <label>
+                      <input class="multiselect intval" type="checkbox" name="successCodes" value="500" />
+                      <span>500</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="col s3">
+                <div class="inputWrapper">
+                  <div class="inputLabel">Timeout</div>
+                  <select class="intval" name="timeoutSeconds">
+                    <option value="1">1 second</option>
+                    <option value="2">2 seconds</option>
+                    <option value="3">3 seconds</option>
+                    <option value="4">4 seconds</option>
+                    <option value="5">5 seconds</option>
+                  </select>
+                </div>
+              </div>
+
+              <div>
+                <div class="center-align">
+                  <div class="inputWrapper ctaWrapper">
+                    <button class="btn waves-effect waves-light blue btn-small btn-flat" type="submit">Create Check
+
+                    </button>
+                    <a href="/checks/all" class="waves-effect red btn-small btn-flat">Back</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,32 @@
+<div class="row">
+  <div class="col s12">
+    <h1 class="center-align">Dashboard - View all your checks</h1>
+    <h4 class="center-align">You may create up to 5 checks</h4>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col s12">
+    <table id="checksListTable">
+      <tr>
+        <th>Method</th>
+        <th>Protocol</th>
+        <th>URL</th>
+        <th>State</th>
+        <th>Details</th>
+      </tr>
+      <tr id="noChecksMessage">
+        <td colspan="5">You have no checks, please create one!</td>
+      </tr>
+
+    </table>
+  </div>
+
+  <div class="col s12">
+    <div class="center-align">
+      <div id="createCheckCTA" class="ctaWrapper">
+        <a href="checks/create" class="waves-effect waves-teal btn-small btn-flat btn-padding-top">Create a Check</a>
+      </div>
+    </div>
+  </div>
+</div>

@@ -13,7 +13,16 @@ body,p,h1,h2,h3,h4,h5,h6,div,span,header,footer,img,a,a:hover,a:active,a:visited
 body {
   font-size: 12px;
   font-weight: 300;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
 }
+
+
+.wrapper {
+  flex: 1 0 auto;
+}
+
 
 h1 {
   font-size: 18px;
@@ -98,7 +107,6 @@ body.loggedIn nav ul li.loggedOut{
 /* Form Styling for Account Creation page and others */
 .formWrapper{
   margin: 0 auto;
-  max-width: 500px;
   padding: 15px;
 }
 
@@ -119,6 +127,10 @@ input {
   width: 100%;
 }
 
+select {
+  display: block;
+}
+
 .inputWrapper{
   padding: 0 0 20px 0;
 }
@@ -126,4 +138,51 @@ input {
 .inputLabel{
   padding: 0 0 5px 0;
   color: #808080;
+}
+
+.cta.blue{
+  background-color: #214478 !important;
+}
+
+.cta.green{
+  background-color: #217844 !important;
+}
+
+.cta.red{
+  background-color: #c83737 !important;
+}
+
+.warning{
+  font-style: italic;
+  color: #c83737;
+  font-size: 17px;
+  text-align: center;
+  line-height: 150%;
+  padding: 0 0 20px 0 ;
+}
+
+.backButton{
+  text-transform: uppercase;
+  font-weight: bold !important;
+  display: inline-block !important;
+  width: 100px;
+  padding: 7px !important;
+  color: #fff !important;
+  background-color: #1a1a1a;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.checkboxGroup label {
+  padding:0 10px 0 0;
+}
+
+.checkboxGroup label span {
+  padding-left: 21px !important;
+}
+
+.ctaWrapper {
+  padding-top: 10px;
+  margin-top: 10px;
 }
