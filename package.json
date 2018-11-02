@@ -1,6 +1,9 @@
 {
   "name": "nodebasics",
   "version": "1.0.0",
+  "engines": {
+    "node": "8.9.0"
+  },
   "description": "### A REST API, and web app in plain Node.js with no 3rd-party libraries.",
   "main": "index.js",
   "directories": {
