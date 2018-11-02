@@ -1,0 +1,19 @@
+{
+  "name": "nodebasics",
+  "version": "1.0.0",
+  "description": "### A REST API, and web app in plain Node.js with no 3rd-party libraries.",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "start": "node index.js",
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github-eldrego.com:eldrego/NodeBasics.git"
+  },
+  "author": "Mark Edomwande",
+  "license": "ISC"
+}
